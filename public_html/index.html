@@ -67,6 +67,16 @@
 	
 		<span class="comment">// Import a SQL dump via SSH</span>
 		<span>msyql -u username -p database_name < /home/database.sql</span>
+
+	<span class="comment">
+	/**
+	 * PHP
+	 */
+	</span>
+		<span class="comment">// Print the full month names for a select form</span>
+		<span>&lt;?php for ($i = 1; $i &lt;= 12; $i++): ?>
+			&lt;option value="&lt;?php echo $i; ?>">&lt;?php echo date("F", mktime(0, 0, 0, $i)); ?></option>
+		&lt;?php endfor; ?></span>
 </pre>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
